@@ -14,7 +14,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Dr. Todd Chocrane
+* Dr. Todd Cochrane
 * Ali Kahwaji
 * All of the teaching and administration staff at NMIT
 
