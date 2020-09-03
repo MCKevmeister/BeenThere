@@ -4,9 +4,16 @@
              x:Class="BeenThere.SearchPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nearyby Places" />
+            <CollectionView>
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="2" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate></DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
