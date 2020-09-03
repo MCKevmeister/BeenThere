@@ -6,13 +6,13 @@ using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
 using BeenThereApp.Models;
-using BeenThereApp.Services;
+//using BeenThereApp.Services;
 
 namespace BeenThereApp.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Location> DataStore => DependencyService.Get<IDataStore<Location>>();
+        //public IDataStore<Location> DataStore => DependencyService.Get<IDataStore<Location>>();
 
         bool isBusy = false;
         public bool IsBusy

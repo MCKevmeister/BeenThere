@@ -51,9 +51,7 @@ namespace BeenThereApp.ViewModels
         {
             Location newLocation = new Location()
             {
-                Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+               //TODO
             };
 
             await DataStore.AddLocationAsync(newLocation);
