@@ -1,6 +1,13 @@
 # SDV602
 
-The game that I am developing in unity with C# scripting as part of my SDV602 course at NMIT
+The geo-location game similiar to GeoCaching.
+
+Developed in Visual Studio 2019 using 
+* XAML power toys
+* Xamarin.Forms
+* Xamarin.Essentials
+
+This is the current working repository for my SDV602 course at NMIT.
 
 ## License
 
