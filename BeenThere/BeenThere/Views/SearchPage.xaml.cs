@@ -20,29 +20,33 @@ namespace BeenThere.Views
 
         private async void onGetCoordinatesClicked(object sender, EventArgs e)
         {
-            try
-            {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-                if (location == null)
-                {
-                    location = await Geolocation.GetLocationAsync(new GeolocationRequest
-                    {
-                        DesiredAccuracy = GeolocationAccuracy.Medium,
-                        Timeout = TimeSpan.FromSeconds(15)
-                    });
-                }
-                if (location == null)
-                    Latitude.Text = "No GPS";
-                else
-                {
-                    Latitude.Text = $"{location.Latitude}";
-                    Longitude.Text = $"{location.Longitude}";
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
+            Models.Class1 myLocation = new Models.Class1();
+            myLocation.getLocation();
+            Latitude.Text = myLocation.myLat; 
+             Longitude.Text = myLocation.myLong;
+            //try
+            //{
+            //    var location = await Geolocation.GetLastKnownLocationAsync();
+            //    if (location == null)
+            //    {
+            //        location = await Geolocation.GetLocationAsync(new GeolocationRequest
+            //        {
+            //            DesiredAccuracy = GeolocationAccuracy.Medium,
+            //            Timeout = TimeSpan.FromSeconds(15)
+            //        });
+            //    }
+            //    if (location == null)
+            //        Latitude.Text = "No GPS";
+            //    else
+            //    {
+            //        Latitude.Text = $"{location.Latitude}";
+            //        Longitude.Text = $"{location.Longitude}";
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex);
+            //}
         }
     }
 }
