@@ -367,3 +367,6 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,xamarinstudio
+UML/.Been There.vpp.lck
+UML/Been There.vpp.bak_008d
+UML/.Been There.vpp.lck
