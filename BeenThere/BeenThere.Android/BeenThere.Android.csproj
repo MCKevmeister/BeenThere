@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70AFEFB1-5B14-4DC9-894B-259DA0B2E3C1}</ProjectGuid>
+    <ProjectGuid>{16E4325B-7F6B-4142-85AF-2FF962371635}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeenThere\BeenThere.csproj">
-      <Project>{598A3113-940D-46AE-AB80-31EC1EC8E3A0}</Project>
+      <Project>{A06E71E7-EAC1-4632-AC67-FD092DBB5556}</Project>
       <Name>BeenThere</Name>
     </ProjectReference>
   </ItemGroup>
