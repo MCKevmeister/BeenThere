@@ -1,40 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+ <!-- Had to add an xmlms (XML Nam Space) for viewModels-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeenThere.Views.Search">
-    <ContentPage.Content>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height=".1" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="20" />
-                <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
-            </Grid.RowDefinitions>
-            <Label Text="Search" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3"
+             xmlns:viewModels="clr-namespace:BeenThere.ViewModels"
+             x:Class="BeenThere.Views.Search"
+             Title="The search">
+<!-- Then I could add a ContentPage.BindingContext as follows-->
+    <ContentPage.BindingContext>
+        <viewModels:LocationCommandViewModel />
+    </ContentPage.BindingContext>
+    
+<!-- Note. I put a Stacklayout here because it was easier to test. The layou will need to be redone ( ;-) )  -->
+    <StackLayout Margin="20">
+
+
+        <Label Text="Search"  
                 FontSize="Title" />
-            <SearchBar Placeholder="Type to search" Grid.Row="2" Grid.ColumnSpan="5" />
-            <Label Text="Search Near" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" FontSize="Title" />
-            <Entry x:Name="Latitude" Placeholder="Latitude"  Grid.Row="4" Grid.ColumnSpan="4"/>
-            <Entry x:Name="Longitude" Placeholder="Longitude"  Grid.Row="5" Grid.ColumnSpan="4"/>
-            <Button Text="Get my Coordinates" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4" Clicked="onGetCoordinatesClicked" />
-            <Label Text="Filter Results" Grid.Row="7"  Grid.ColumnSpan="2"/>
+            <Label Text="Search Near"   FontSize="Title" />
+            <Label Text="{Binding TheLongitude, StringFormat='Long is now {0}'}"    FontSize="20" />
+            <Label Text="{Binding TheLatitude, StringFormat='Lat is now {0}'}"   FontSize="20" />
+            <Button Text="Get my Coordinates"   FontSize="20"
+                         Command="{Binding GetLocation}"
+                        />
+        <Label Text="{Binding BeenTheres}" />
+        <!-- Clicked="onGetCoordinatesClicked" -->
+            <!--<Label Text="Filter Results" Grid.Row="7"  Grid.ColumnSpan="2"/>
             <RadioButton Text="Location" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="8" />
             <RadioButton Text="Path" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="9"/>
-            <Button Text="Serach" BackgroundColor="Green" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="9" />
+            <Button Text="Search" BackgroundColor="Green" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="9" />-->
             <BoxView />
-        </Grid>
-    </ContentPage.Content>
+        </StackLayout>
+  
 </ContentPage>
