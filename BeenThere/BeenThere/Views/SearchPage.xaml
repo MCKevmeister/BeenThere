@@ -2,7 +2,6 @@
  <!-- Had to add an xmlms (XML Nam Space) for viewModels-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            <Grid.RowDefinitions>
              xmlns:viewModels="clr-namespace:BeenThere.ViewModels"
              x:Class="BeenThere.Views.Search"
              Title="The search">
