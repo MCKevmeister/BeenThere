@@ -10,7 +10,7 @@ namespace BeenThere
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Main();
         }
 
         protected override void OnStart()

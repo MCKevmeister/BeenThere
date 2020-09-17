@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BeenThereApp.ViewModels;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BeenThereApp.Views
+namespace BeenThere.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class Navigation : ContentPage
     {
-        public LoginPage()
+        public Navigation()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
         }
     }
 }

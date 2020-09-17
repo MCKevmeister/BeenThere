@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BeenThere
+namespace BeenThere.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SearchPage : ContentPage
+    public partial class Account : ContentPage
     {
-        public SearchPage()
+        public Account()
         {
             InitializeComponent();
         }
