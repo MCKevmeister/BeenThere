@@ -15,9 +15,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* Dr. Todd Cochrane
-* Ali Kahwaji
-* All of the teaching and administration staff at NMIT
+* [Ali Kahwaji](https://github.com/alikahwaji/)
 
 >      The secret of getting ahead is getting started
 >                      Mark Twain
